@@ -12,10 +12,10 @@
             innovar y crecer.
           </p>
           <div class="hero-buttons">
-            <Button variant="primary" @click="scrollTo('#productos')">
+            <Button variant="primary" @click="$router.push('/productos')">
               Ver Productos
             </Button>
-            <Button variant="outline" @click="scrollTo('#contacto')">
+            <Button variant="outline" @click="$router.push('/contacto')">
               Contactar
             </Button>
           </div>
@@ -42,13 +42,6 @@
 
 <script setup>
 import Button from "./ui/Button.vue";
-
-const scrollTo = (selector) => {
-  const element = document.querySelector(selector);
-  if (element) {
-    element.scrollIntoView({ behavior: "smooth" });
-  }
-};
 </script>
 
 <style scoped>

@@ -2,10 +2,10 @@
   <nav class="navbar">
     <div class="container">
       <div class="navbar-content">
-        <a href="#" class="logo">
+        <router-link to="/" class="logo">
           <img src="/assets/logo.png" alt="Softkiss Logo" />
           <span>Softkiss</span>
-        </a>
+        </router-link>
 
         <button
           class="menu-toggle"
@@ -16,10 +16,22 @@
         </button>
 
         <ul class="nav-links" :class="{ active: isMenuOpen }">
-          <li><a href="#inicio" @click="closeMenu">Inicio</a></li>
-          <li><a href="#nosotros" @click="closeMenu">Nosotros</a></li>
-          <li><a href="#productos" @click="closeMenu">Productos</a></li>
-          <li><a href="#contacto" @click="closeMenu">Contacto</a></li>
+          <li><router-link to="/" @click="closeMenu">Inicio</router-link></li>
+          <li>
+            <router-link to="/nosotros" @click="closeMenu"
+              >Nosotros</router-link
+            >
+          </li>
+          <li>
+            <router-link to="/productos" @click="closeMenu"
+              >Productos</router-link
+            >
+          </li>
+          <li>
+            <router-link to="/contacto" @click="closeMenu"
+              >Contacto</router-link
+            >
+          </li>
         </ul>
       </div>
     </div>
@@ -138,6 +150,7 @@ const closeMenu = () => {
   font-weight: 500;
   transition: color 0.3s ease;
   position: relative;
+  text-decoration: none;
 }
 
 .nav-links a::after {
@@ -151,11 +164,13 @@ const closeMenu = () => {
   transition: width 0.3s ease;
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links a.router-link-active {
   color: var(--primary);
 }
 
-.nav-links a:hover::after {
+.nav-links a:hover::after,
+.nav-links a.router-link-active::after {
   width: 100%;
 }
 
