@@ -10,7 +10,7 @@ Sitio web corporativo de Softkiss - D## 🎯 Productos
 - [sellit.app](https://sellit.app) - E-commerce y ventas en línea
 
 ### SK Tools Suite
-- [sktools.app](https://sktools.app) - Herramientas especializadas (Doc, Pic, Vid, Aud, QR)olladora de Software
+- [sktools.app](https://sktools.app) - Herramientas de manipulación de documentos, imágenes, video, audio y generador/tracker de QRolladora de Software
 
 ![Softkiss](./assets/brand.png)
 

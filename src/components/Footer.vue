@@ -61,7 +61,9 @@
           <div class="footer-column">
             <h4>SK Tools</h4>
             <ul>
-              <li><a href="https://sktools.app" target="_blank">sktools.app</a></li>
+              <li>
+                <a href="https://sktools.app" target="_blank">sktools.app</a>
+              </li>
             </ul>
           </div>
 

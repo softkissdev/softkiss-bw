@@ -53,32 +53,37 @@
 
       <div class="products-section tools-section">
         <h3 class="section-subtitle">SK Tools Suite</h3>
-        <p class="tools-description">Herramientas especializadas disponibles en <a href="https://sktools.app" target="_blank" class="tools-link">sktools.app</a></p>
+        <p class="tools-description">
+          Herramientas especializadas disponibles en
+          <a href="https://sktools.app" target="_blank" class="tools-link"
+            >sktools.app</a
+          >
+        </p>
         <div class="tools-grid">
           <div class="tool-card">
             <span class="tool-icon">📄</span>
             <h4>SK Doc</h4>
-            <p>Motor documental</p>
+            <p>Manipulación de documentos</p>
           </div>
           <div class="tool-card">
             <span class="tool-icon">🖼️</span>
             <h4>SK Pic</h4>
-            <p>Motor de imágenes</p>
+            <p>Manipulación de imágenes</p>
           </div>
           <div class="tool-card">
             <span class="tool-icon">🎬</span>
             <h4>SK Vid</h4>
-            <p>Motor de video</p>
+            <p>Manipulación de video</p>
           </div>
           <div class="tool-card">
             <span class="tool-icon">🎵</span>
             <h4>SK Aud</h4>
-            <p>Motor de audio</p>
+            <p>Manipulación de audio</p>
           </div>
           <div class="tool-card">
             <span class="tool-icon">📱</span>
             <h4>SK QR</h4>
-            <p>Motor de códigos QR</p>
+            <p>Generador y tracker de QR</p>
           </div>
         </div>
       </div>
