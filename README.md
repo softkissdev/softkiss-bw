@@ -103,6 +103,10 @@ development → main → production
   testing    staging   auto-deploy
 ```
 
+## 🎨 Diseño
+
+Diseño moderno con tonos pastel claros, enfocado en la experiencia de usuario y optimizado para SEO.
+
 ## 📝 Licencia
 
 © 2025 Softkiss. Todos los derechos reservados.
@@ -110,6 +114,3 @@ development → main → production
 ---
 
 **Desarrollado con 💜 por Softkiss**
-# Test webhook deploy
-# Test webhook deploy
-# Test webhook deploy
