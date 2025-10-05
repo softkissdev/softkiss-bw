@@ -3,7 +3,7 @@
     <div class="container">
       <div class="navbar-content">
         <router-link to="/" class="logo">
-          <img src="/assets/logo.png" alt="Softkiss Logo" />
+          <img src="/assets/logo-transparent.png" alt="Softkiss Logo" />
           <span>Softkiss</span>
         </router-link>
 

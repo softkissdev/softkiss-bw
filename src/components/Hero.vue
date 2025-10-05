@@ -21,7 +21,7 @@
           </div>
         </div>
         <div class="hero-image">
-          <img src="/assets/brand.png" alt="Softkiss Brand" />
+          <img src="/assets/brand-transparent.png" alt="Softkiss Brand" />
           <div class="floating-card card-1">
             <div class="card-icon">💡</div>
             <p>Innovación</p>
