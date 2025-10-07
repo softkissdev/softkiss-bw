@@ -1,6 +1,34 @@
 # 🌸 Softkiss Business Website
 
-> Sitio web corporativo de Softkiss - Desarrolladora de software comercial y a medida.
+> Sitio web corporativo de Softkiss - Desarrolla## 🚀 Deployment
+
+Este proyecto se despliega automáticamente usando [webhook-deployer](https://github.com/softkissdev/webhook-deployer) con estrategia blue-green.
+
+**Server:** AWS EC2 - Ubuntu 24.04  
+**URL:** https://softkiss.dev (SSL/TLS con Let's Encrypt)
+
+**Hacer deployment:**
+```bash
+git tag -a v1.x.x -m "Release description"
+git push origin v1.x.x
+```
+
+El sistema automáticamente:
+- ✅ Clona el código
+- ✅ Instala dependencias (`npm ci`)
+- ✅ Construye la aplicación (`npm run build`)
+- ✅ Despliega con zero-downtime
+- ✅ Recarga nginx
+
+**Tiempo de deployment:** ~7 segundos
+
+### 🔐 SSL/TLS
+
+- Certificado: Let's Encrypt (ECDSA)
+- Renovación automática configurada
+- HTTP → HTTPS redirect automático
+- Dominios: softkiss.dev, www.softkiss.dev
+- Válido hasta: 2026-01-05omercial y a medida.
 
 [![Deployment](https://img.shields.io/badge/deployment-automated-success)](https://softkiss.dev)
 [![Vue 3](https://img.shields.io/badge/Vue-3-42b883)](https://vuejs.org/)
