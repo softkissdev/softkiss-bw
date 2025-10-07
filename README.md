@@ -1,12 +1,26 @@
-# Softkiss Business Website
+# 🌸 Softkiss Business Website
 
-Sitio web corporativo de Softkiss - Desarrolladora de software comercial y a medida.
+> Sitio web corporativo de Softkiss - Desarrolladora de software comercial y a medida.
+
+[![Deployment](https://img.shields.io/badge/deployment-automated-success)](https://softkiss.dev)
+[![Vue 3](https://img.shields.io/badge/Vue-3-42b883)](https://vuejs.org/)
+[![Vite](https://img.shields.io/badge/Vite-5-646cff)](https://vitejs.dev/)
+
+🌐 **Live:** [https://softkiss.dev](https://softkiss.dev)
 
 ## 🚀 Productos
 
 - **[Terbiz](https://terbiz.app)** - Plataforma de gestión empresarial
 - **[Jurdex](https://jurdex.app)** - Sistema de gestión jurídica
 - **[FocusIt](https://focusit.app)** - Herramienta de productividad
+
+## ✨ SK Tools
+
+Suite de herramientas gratuitas para productividad:
+- Conversor de documentos (PDF, Word, Excel)
+- Editor y compresor de imágenes
+- Procesador de video y audio
+- Generador y rastreador de códigos QR
 
 ## 🛠️ Tecnologías
 
@@ -64,6 +78,25 @@ softkiss-bw/
 
 El sitio usa una paleta de colores pastel clara inspirada en el branding de Softkiss, con tonos rosa y lavanda que crean una apariencia moderna y profesional.
 
-## 📄 Licencia
+## � Deployment
+
+Este proyecto se despliega automáticamente usando [webhook-deployer](https://github.com/softkissdev/webhook-deployer) con estrategia blue-green.
+
+**Hacer deployment:**
+```bash
+git tag -a v1.x.x -m "Release description"
+git push origin v1.x.x
+```
+
+El sistema automáticamente:
+- ✅ Clona el código
+- ✅ Instala dependencias (`npm ci`)
+- ✅ Construye la aplicación (`npm run build`)
+- ✅ Despliega con zero-downtime
+- ✅ Recarga nginx
+
+**Tiempo de deployment:** ~7 segundos
+
+## �📄 Licencia
 
 © 2025 Softkiss. Todos los derechos reservados.
