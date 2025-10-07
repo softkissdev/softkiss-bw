@@ -8,5 +8,4 @@ export default defineConfig({
       "@": "/src",
     },
   },
-  publicDir: "public", // SEO files: robots.txt, sitemap.xml
 });

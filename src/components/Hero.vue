@@ -12,16 +12,16 @@
             innovar y crecer.
           </p>
           <div class="hero-buttons">
-            <Button variant="primary" @click="$router.push('/productos')">
+            <Button variant="primary" @click="scrollTo('#productos')">
               Ver Productos
             </Button>
-            <Button variant="outline" @click="$router.push('/contacto')">
+            <Button variant="outline" @click="scrollTo('#contacto')">
               Contactar
             </Button>
           </div>
         </div>
         <div class="hero-image">
-          <img src="/assets/brand-transparent.png" alt="Softkiss Brand" />
+          <img src="/assets/brand.png" alt="Softkiss Brand" />
           <div class="floating-card card-1">
             <div class="card-icon">💡</div>
             <p>Innovación</p>
@@ -42,6 +42,13 @@
 
 <script setup>
 import Button from "./ui/Button.vue";
+
+const scrollTo = (selector) => {
+  const element = document.querySelector(selector);
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+};
 </script>
 
 <style scoped>
