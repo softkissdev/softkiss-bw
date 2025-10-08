@@ -7,16 +7,29 @@
       />
 
       <div class="about-content">
-        <Card class="about-card">
+        <Card class="about-card mission-vision">
           <template #icon>🎯</template>
           <template #title>Nuestra Misión</template>
           <template #content>
-            Crear soluciones de software innovadoras que impulsen el crecimiento
-            de nuestros clientes, combinando tecnología de punta con un diseño
-            excepcional.
+            Crear soluciones innovadoras de software que impulsen el crecimiento 
+            empresarial y personal de nuestros clientes, utilizando la mejor 
+            tecnología adaptada a sus necesidades específicas, con calidad, 
+            compromiso y excelencia en cada proyecto.
           </template>
         </Card>
 
+        <Card class="about-card mission-vision">
+          <template #icon>🌟</template>
+          <template #title>Nuestra Visión</template>
+          <template #content>
+            Ser el aliado tecnológico de referencia en América Latina, 
+            reconocidos por transformar ideas en soluciones digitales exitosas 
+            que generen valor real y sostenible para empresas y personas.
+          </template>
+        </Card>
+      </div>
+
+      <div class="about-values">
         <Card class="about-card">
           <template #icon>💼</template>
           <template #title>Experiencia</template>
@@ -33,6 +46,16 @@
           <template #content>
             Utilizamos las tecnologías más modernas para crear aplicaciones web
             robustas, escalables y con una experiencia de usuario excepcional.
+          </template>
+        </Card>
+
+        <Card class="about-card">
+          <template #icon>🤝</template>
+          <template #title>Compromiso</template>
+          <template #content>
+            Nos comprometemos con el éxito de nuestros clientes, brindando 
+            soporte continuo y evolución constante de nuestras soluciones para 
+            garantizar resultados duraderos.
           </template>
         </Card>
       </div>
@@ -58,14 +81,33 @@ import Card from "./ui/Card.vue";
 
 .about-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
   margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+.about-values {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
 }
 
 .about-card {
   animation: fadeInUp 0.6s ease-out;
   animation-fill-mode: both;
+}
+
+.about-card.mission-vision {
+  background: linear-gradient(
+    135deg,
+    var(--primary-light) 0%,
+    var(--accent) 100%
+  );
+  color: white;
+  border: none;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
 
 .about-card:nth-child(1) {
@@ -78,6 +120,13 @@ import Card from "./ui/Card.vue";
 
 .about-card:nth-child(3) {
   animation-delay: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .about-content,
+  .about-values {
+    grid-template-columns: 1fr;
+  }
 }
 
 @keyframes fadeInUp {
